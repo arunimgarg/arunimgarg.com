@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eisenhower Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quadrants">
+            <div class="quadrant" id="q1">
+                <div class = "quadrant-header">
+                    <div class="connection-indicator blue"></div>
+                    <h3>Urgent and important</h3>
+                </div>
+            </div>
+            <div class="quadrant" id="q2">
+                <div class = "quadrant-header">
+                    <div class="connection-indicator green"></div>
+                    <h3>Not urgent and important</h3>
+                </div>
+            </div>
+                        <div class = "clear-button-container">
+                <button id="clear">Clear display boxes</button>
+            </div>
+            <div class="quadrant" id="q3">
+                <div class = "quadrant-header">
+                    <div class="connection-indicator red"></div>
+                    <h3>Urgent and not important</h3>
+                </div>
+            </div>
+            <div class="quadrant" id="q4">
+                <div class = "quadrant-header">
+                    <div class="connection-indicator yellow"></div>
+                    <h3>Not urgent and not important</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-boxes">
+            <div class="textbox-wrapper">
+                <div class="connection-indicator blue"></div>
+                <h3>Urgent and important</h3>
+                <textarea id="text1"></textarea>
+            </div>
+            <div class="textbox-wrapper">
+                <div class="connection-indicator green"></div>
+                <h3>Urgent and important</h3>
+                <textarea id="text2"></textarea>
+            </div>
+            <div class="textbox-wrapper">
+                <div class="connection-indicator red"></div>
+                <h3>Urgent and not important</h3>
+                <textarea id="text3"></textarea>
+            </div>
+            <div class="textbox-wrapper">
+                <div class="connection-indicator yellow"></div>
+                <h3>Not urgent and not important</h3>
+                <textarea id="text4"></textarea>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
