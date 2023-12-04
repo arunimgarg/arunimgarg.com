@@ -18,6 +18,28 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+
+		<script type = "text/javascript">
+			function onload_main(){
+				displayMotto();
+			}
+			function displayMotto(){
+				var mottos = [
+					["The present is theirs; the future, for which I really worked, is mine.", "Nikola Tesla"],
+					["Be alone, that is the secret of invention; be alone, that is when ideas are born.", "Nikola Tesla"],
+					["Of all things, I liked books best.", "Nikola Tesla"],
+					["Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.", "Albert Einstein"],
+					["Try not to become a man of success, but rather try to become a man of value.", "Albert Einstein"],
+					["Failure is an option here. If things are not failing, you are not innovating enough.","Elon Musk"],
+					["Stay hungry, stay foolish.","Steve Jobs"],
+					["I propose to consider the question: Can machines think?","A. M. Turing"],
+					["Discipline is doing something you hate as if you love it.","Mike Tyson"],
+					["Only the dead have seen the end of war.","Plato"],
+				]
+				var randIndex = Math.floor(Math.random() * mottos.length);
+				document.getElementById("mottos").innerHTML = "\"" + mottos[randIndex][0] + "\" — <a style='font-weight:bold'>" + mottos[randIndex][1] + "</a> <a onclick=\"displayMotto()\">(Get Random Quote)</a>";
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -28,9 +50,9 @@
 					<section class="banner style3 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Arunim Garg</h1>
-							<div style="width:150px; height:150px; margin-left: 0px;">
+<!-- 							<div style="width:150px; height:150px; margin-left: 0px;">
 								<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=6dLo9dNnuhCYVTEth1xhHk3Suav7RYnfj6RYiCvw9BE"></script>
-							</div>
+							</div> -->
 							<p class="major">Making data-driven decisions, one at a time.</p>
 							<p>Hi, I'm a future data scientist looking to make data-driven decisions to impact the world positively. I'm a recent data engineer, data analyst and currently a researcher. 
 								I recently finished my master's degree in computer science in 2021, and my research papers can be found <a target = "_blank" href="https://scholar.google.ca/citations?user=o7i_Yj4AAAAJ&hl=en&authuser=1&oi=ao"> here</a>.</p>
@@ -49,6 +71,10 @@
 						<div class="image">
 							<img src="images/arunim.jpeg" alt="" />
 						</div>
+						<div id = 'mottos' style = 'font-style: italic;'>
+							A random quote is loading... <br>
+						</div>
+
 					</section>
 				
 <!-- 				<!-- Two -->
