@@ -20,6 +20,7 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<script type = "text/javascript">
+			<!--
 			function onload_main(){
 				displayMotto();
 			}
@@ -39,6 +40,7 @@
 				var randIndex = Math.floor(Math.random() * mottos.length);
 				document.getElementById("mottos").innerHTML = "\"" + mottos[randIndex][0] + "\" — <a style='font-weight:bold'>" + mottos[randIndex][1] + "</a> <a onclick=\"displayMotto()\">(Get Random Quote)</a>";
 			}
+			-->
 		</script>
 	</head>
 	<body class="is-preload">
@@ -70,7 +72,7 @@
 						</div>
 						<div class="image">
 							<img src="images/arunim.jpeg" alt="" />
-						</div>
+						</div> <br>
 						<div id = 'mottos' style = 'font-style: italic;'>
 							A random quote is loading... <br>
 						</div>
